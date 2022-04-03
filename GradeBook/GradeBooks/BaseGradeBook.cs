@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-
 using GradeBook.Enums;
 using System.Collections.Generic;
 using System.IO;
@@ -19,6 +18,7 @@ namespace GradeBook.GradeBooks
         public BaseGradeBook(string name, bool isWeighted)
         {
             Name = name;
+            IsWeighted = isWeighted;
             Students = new List<Student>();
         }
 
